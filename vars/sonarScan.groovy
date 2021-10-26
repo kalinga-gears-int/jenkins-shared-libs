@@ -1,4 +1,4 @@
-def sonarScan(Map config=[:]){
+def call(Map config=[:]){
     def scannerHome = tool 'Dev Sonar Scanner';
     
     withSonarQubeEnv('Dev SonarQube Server') { // If you have configured more than one global server connection, you can specify its name
