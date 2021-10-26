@@ -1,3 +1,3 @@
-def sonarScan(Map config=[:]){
+def call(Map config=[:]){
 	sh "Hi"
 }
