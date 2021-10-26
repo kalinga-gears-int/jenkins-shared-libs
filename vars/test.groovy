@@ -12,4 +12,6 @@ def sonarScan(Map config=[:]){
     -Dsonar.host.url=http://10.0.0.11:9009 \
     -Dsonar.login=${config.key}"
     }
+    def scanID = waitForQualityGate();
+	echo "ScanID is ${scanID}"
 }
