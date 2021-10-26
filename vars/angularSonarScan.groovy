@@ -17,7 +17,7 @@ def call(Map config=[:]){
     def qg = waitForQualityGate();
         if(qg.status != "OK"){
             echo "Quality Gate Not OK"
-        }else if (qg.status = "OK")
+        }else if (qg.status == "OK")
         {
             echo "Quality Gate OK"
         }
