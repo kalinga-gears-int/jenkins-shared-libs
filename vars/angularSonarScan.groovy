@@ -7,4 +7,7 @@ def call(Map config=[:]){
                             -Dsonar.host.url=http://10.0.0.11:9009 \
                             -Dsonar.login=1e8ef92786cab5caf31c1ecce580bc9b24e2cd4f"
     };
+        
+    def qg = waitForQualityGate();
+    echo "${qg.status}"
 }
