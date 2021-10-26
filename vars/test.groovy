@@ -1,3 +1,3 @@
-def sonarScan(){
+def scan(){
     echo "test"
 }
