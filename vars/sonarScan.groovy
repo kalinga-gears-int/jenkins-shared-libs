@@ -1,3 +1,3 @@
 def call(Map config=[:]){    
-    echo "test"
+    def scannerHome = tool 'Dev Sonar Scanner';
 }
