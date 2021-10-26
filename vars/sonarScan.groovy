@@ -1,5 +1,3 @@
-def call(Map config=[:]){
-    def scannerHome = tool 'Dev Sonar Scanner';
-    
+def call(Map config=[:]){    
     ehco "test"
 }
