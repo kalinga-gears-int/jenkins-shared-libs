@@ -1,3 +1,3 @@
 def call(Map config=[:]){    
-    ehco "test"
+    echo "test"
 }
