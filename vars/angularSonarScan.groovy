@@ -9,5 +9,10 @@ def call(Map config=[:]){
     };
         
     def qg = waitForQualityGate();
-    echo "${qg.status}"
+        if(qg.status != "OK"){
+            echo "NOT OK"
+        }else
+        {
+            echo "OK"
+        }
 }
