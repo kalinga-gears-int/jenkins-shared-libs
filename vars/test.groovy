@@ -17,6 +17,6 @@ def call(project){
     
         
     def qg = waitForQualityGate();
-    echo ${pg}
+    echo "${pg}"
         
 }
