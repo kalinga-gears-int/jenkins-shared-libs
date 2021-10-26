@@ -1,8 +1,3 @@
-def call(String name = 'User') {
-		echo "Welcome, ${name}."
-}
-
-
 def sonarScan(Map config=[:]){
     
     def scannerHome = tool 'Dev Sonar Scanner';
