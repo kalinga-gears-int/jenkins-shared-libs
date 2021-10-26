@@ -2,6 +2,7 @@ def call(project){
 
 
     timeout(time: 1, unit: 'HOURS') {
+        sh "chmod +x gradlew"
         def scannerHome = tool 'Dev Sonar Scanner';
         withSonarQubeEnv('Dev SonarQube Server') {
         sh """
