@@ -1,3 +1,3 @@
-def scan(){
+def call(){
     echo "test"
 }
