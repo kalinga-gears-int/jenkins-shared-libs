@@ -19,7 +19,7 @@ def call(project){
     def qg = waitForQualityGate();
         if(qg.status != "OK"){
             echo "Quality Gate Not OK"
-            error("Sonar scan failed because of ${qp.status}")
+            error("Sonar scan failed because of ${qg.status}")
         }else if (qg.status == "OK")
         {
             echo "Quality Gate OK"
